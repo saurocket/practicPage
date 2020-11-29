@@ -21,10 +21,23 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.header-menu {
+/* header */
+.header{
   background-color: gray;
 }
+.header-menu{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-menu li:not(:first-child){
+  margin-left:40px;
+}
+
 .header-menu .link {
   font-weight: 500;
   line-height: 1.25;
@@ -44,7 +57,13 @@ ul {
   text-align: center;
   color: #ffffff;
 }
+.hero{
+padding-top: 320px;
+padding-bottom: 330px;
+
+}
 .hero-title {
+  margin-top: 20px;
   font-weight: 800;
   font-size: 48px;
   line-height: 1.33;
@@ -66,13 +85,23 @@ ul {
   align-items: center;
 }
 .hero-btn {
-  margin: 0 auto;
+  margin: 50px auto;
+}
+/* Doing CSS */
+.doing{
+  padding-top:110px;
+  padding-bottom: 105px;
 }
 .doing-title{
   text-align: center;
+  margin-bottom: 50px;
 }
 .doing-text{
   text-align: center;
+  margin-bottom: 80px;
+}
+.doing-list{
+  margin-bottom: 55px;
 }
 .doing-subtitle{
   color: #000000;
@@ -86,6 +115,7 @@ ul {
 
 }
 .doing-btn{
+  margin: 0 auto;
   text-align: center;
 }
 .doing-list{
@@ -93,6 +123,11 @@ ul {
 }
 .doing-item{
   width: 353px;
+}
+.doing-icon{
+  width:40px;
+  height: 40px;
+  fill: var(--accent);
 }
 /* style high standart */
 
@@ -175,6 +210,7 @@ align-items: center;
 
 .product-list li{
  width: 350px;
+ text-align: left;
 }
 .product-list-header::before{
   content: "01. ";
@@ -187,5 +223,149 @@ align-items: center;
   color: var(--accent);
 }
 .product-container{
+  border-bottom:1px solid #E0E0E0;
+}
+/* our project */
+
+.project-container{
+/* position: absolute;
+top: 50%; */
+padding: 185px 0 145px;
+text-align: center;
+
+}
+.project-container p {
+  margin: 50px auto 70px;
+}
+.project-container ul {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.project-container ul li:not(:last-child) {
+  margin-right: 30px;
+}
+.btn-project{
+  margin: 0 auto;
+}
+/* video */
+
+.video{
+    position: relative;
+    text-align: center;
+    background-color:black;
+}
+.video::before{
+  content: '';
+  opacity: 0.6;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+  url("../images/BgVideo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:570px;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+
+/* .bg-video{
+background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+url("../images/BgVideo.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height:570px;
+ position: absolute;
+} */
+.video h2{
+  padding: 70px 0 30px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  
+}
+.video p{
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+.container-video{
+  border-bottom:1px solid #E0E0E0;
+ 
+}
+.container-video{
+ padding-bottom:85px;
+}
+/* block form */
+.main-form{
+  padding-top: 85px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+.main-form b {
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #000;
+}
+.main-form p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#main-form{
+  border: 1px solid var(--main-text-color);
+  border-radius:30px;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  width: 500px;
+  margin: 0 auto;
+  
+}
+#main-form input{
+text-align: left;
+padding: 15px 0 15px;
+color: var(--main-text-color);
+border: none;
+}
+#main-form button{
+  padding: 15px 35px 15px 30px;
+  text-align: right;
+  background-color:var(--accent);
+  color: #fff;
+  border: none;
+}
+.footer-container{
+padding-top: 70px;
+}
+.list-container{
+display: flex;
+justify-content:space-between;
+align-items: flex-start;
+}
+.footer-container>p{
+  text-align: center;
+  padding: 30px auto;
+}
+.list-container p{
+  color: #000;
+  margin-bottom:35px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.list-container-items a{
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.list-container-items li:not(:last-child){
+margin-bottom: 30px;
+}
+.list-container-items address{
+  font-style: normal;
+}
+.list-container{
+  padding-bottom: 70px;
   border-bottom:1px solid #E0E0E0;
 }
